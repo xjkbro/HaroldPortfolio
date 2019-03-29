@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>What Is Art?</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <div id="navigation">
+            <a id="logo" href="javascript:void(0);" onclick="navFunc()" style="color:coral;">What is Art?</a>
+            <div id="links">
+                <a href="#">Art</a>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Resume</a>
+            </div>
+        </div>
+
+        <div id="content">
+            <div id="about">
+                <a id="aboutme" href="javascript:void(0);" onclick="aboutFunc()"> Harold Omeldo </a>
+                <div id="info">
+                    <img src="assets/showcase.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, ad soluta doloremque alias temporibus exercitationem illum itaque architecto dignissimos optio nobis expedita cum illo in corporis quia natus ex tempora.</p>
+                </div>
+            </div>
+            <div id="gallery">
+                    <a id="galHead" href="javascript:void(0);" onclick="galleryFunc()"> The Arts </a>
+                    <div id="galleryArt">
+                    <img src="assets/showcase.jpg" alt="">
+                    </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/app.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+      function navFunc() {
+            var x = document.getElementById("links");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    function aboutFunc(){
+        var y = document.getElementById("info");
+        if (y.style.display === "block") {
+            y.style.display = "none";
+        } else {
+            y.style.display = "block";
+        }
+    }
+    function galleryFunc(){
+        var y = document.getElementById("galleryArt");
+        if (y.style.display === "block") {
+            y.style.display = "none";
+        } else {
+            y.style.display = "block";
+        }
+    }
+    function grow() {
+        var grow = document.getElementById('links');
+        var x = document.getElementsByClassName('container');
+
+        if (grow.clientHeight) {
+            grow.style.height = 0;
+        } 
+        else {
+        grow.style.height = window.clientHeight + "px";
+        }
+    }
+        
+    </script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+</body>
+</html>

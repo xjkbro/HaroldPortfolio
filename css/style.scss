@@ -1,0 +1,119 @@
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:200,300,400,600,700,900');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #333;
+}
+body{
+    .container{
+        max-width: 100vw;
+        max-height: 100vh;
+        #navigation{
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+            color: coral;
+            
+            a{
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 1rem;
+                display: block;
+            }
+            a:hover{
+                transform: scale(1.05);
+                transition: transform .3s;
+            }
+            #logo{
+                font-size: 1.2rem;
+                font-weight: 700;
+
+            }
+            #links{
+                display: none;
+                a{
+                    color: coral;
+
+                }
+                a:hover{
+                    color: coral;
+                }
+                     
+            }
+        }
+        #content{
+            display:flex;
+            flex-direction: column;
+
+            #about{
+                color: coral;
+                text-align: center;
+                a{
+                    padding: 14px 16px;
+                    text-decoration: none;
+                    font-size: 1rem;
+                    display: block;
+                }
+                a:hover{
+                    transform: scale(1.05);
+                    transition: transform .3s;
+                }
+                #aboutme{
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    color: coral;
+
+                }
+                #info{
+                    display:block;
+
+                    img{
+                        padding: 10px 0;
+                        border-radius: 50%;
+                        width: 75vw;
+                        height: 75vw;
+                        object-fit: cover;
+                    }
+                    p{
+                        padding: 12px;
+                        text-indent: 10%;
+                        text-align: left;
+                        line-height: 1.3em;
+                    }
+                }
+            }
+            #gallery{
+                text-align: center;
+                
+                a{
+                    padding: 14px 16px;
+                    text-decoration: none;
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    color: coral;
+                    display: block;
+                }
+                a:hover{
+                    transform: scale(1.05);
+                    transition: transform .3s;
+                }
+                #galleryArt{
+                    display: none;
+                    margin: 10px;
+
+                    img{
+                        width: 95vw;
+                        height: 95vw;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+        
+}
